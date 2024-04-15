@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+    --blue-bg: #0f0c29;
+    --blue-br: #302b63;
+    --red-bg: #dc2430;
+    --red-br: #fcb045;
+    --silver-bg: #f2f2f2;
+}
+
+.list_cards_js {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.list_cards_js li {
+    max-width: 150px;
+    max-height:190px;
+    overflow: auto;
+    list-style: none;
+    text-align: center;
+    font-family: "Philosopher", sans-serif;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px var(--blue-br);
+    border-radius: 7px;
+    padding: 0.3rem 0.7rem;
+    margin: 0.3rem;
+}
+.list_cards_js li h3 {
+    max-width: 100px;
+}
+.list_cards_js li img {
+    width: 100px;
+    border-radius: 9px;
+}
+.list_cards_js li button {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    margin: 0.3rem;
+}

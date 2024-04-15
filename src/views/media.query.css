@@ -1,0 +1,51 @@
+@media only screen and (max-width: 600px) {
+    header {
+        width: 100%;
+    }
+    .container_header {
+        height: 9vh;
+    }
+    .container_header nav {
+        display: none;
+    }
+
+    .container_body {
+        flex-direction: column;
+    }
+    .container_body section {
+        width: 100%;
+    }
+    .container_body section:first-child {
+        border-radius: 0;
+        height: 100vh;
+    }
+    .container_body section:last-child {
+        height: auto;
+    }
+    .container_body section div {
+        width: 100%;
+    }
+     form {
+        margin: 4rem 1rem;
+    }
+
+    .list_cards_js {
+        width: 100%;
+    }
+    .list_cards_js li {
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container_footer div:first-child {
+        display: block;
+    }
+    .container_body section:first-child div {
+        width: 100%;
+    }
+    .presentatio {
+        text-align: justify;
+        padding: 1rem;
+    }
+}

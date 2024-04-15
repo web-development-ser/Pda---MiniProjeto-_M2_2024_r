@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+    --blue-bg: #0f0c29;
+    --blue-br: #302b63;
+    --red-bg: #dc2430;
+    --red-br: #fcb045;
+    --silver-bg: #f2f2f2;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 45%;
+    position: fixed;
+    border-bottom: solid 2px var(--silver-bg);
+    border-bottom-right-radius: 9px;
+    background: var(--blue-bg);
+}
+.container_header {
+    height: 8.3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container_header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0.7rem;
+}
+.container_header nav ul li {
+    text-decoration: none;
+    border-bottom: solid 3px var(--blue-br);
+    border-radius: 5px;
+    padding: 0.4rem;
+    margin-right: 0.4rem;
+}
+.container_header nav ul li:hover {
+    border-color: var(--red-br);
+    transition: 0.7s;
+}
+.container_header nav ul li a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: "Philosopher", sans-serif;
+    color: var(--silver-bg);
+}
+
+.box_logo {
+    width: 260px;
+    height: 40px;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--silver-bg);
+    line-height: 30px;
+    position: absolute;
+    border-radius: 4px;
+}
+.box_one {
+    top: 13px;
+    left: 16px;
+    z-index: 2;
+    border: solid 3px var(--silver-bg);
+}
+.box_two {
+    top: 7px;
+    left: 10px;
+    z-index: 1;
+    border: solid 3px var(--silver-bg);
+}
+.box_one:hover, .box_two:hover {
+    border-color: var(--red-br);
+    transition: 0.7s;
+}
+
+.container_body {
+    display: flex;
+    flex-direction: row;
+}
+.container_body section {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 6%;
+    border-bottom-right-radius: 6%;
+}
+.container_body section:first-child {
+    background-color: var(--blue-bg);
+}
+/* Dividindo valores... */
+.container_body section:first-child div {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid 3px var(--blue-br);
+    border-radius: 9px;
+    padding: 1rem;
+}
+.ops_register_css {
+    font-family: "Philosopher", sans-serif;
+    font-size: 1.3rem;
+}
+form input {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    border-color: var(--blue-br);
+    outline: 0;
+    border-radius: 4px;
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+form .open_css {
+    padding: 0.4rem;
+    margin: 0.3rem;
+    border-left: solid 3px var(--red-br);
+    border-radius: 7px;
+}
+form button {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    background: #a4c5e8;
+    border: none;
+    border: solid 2px var(--blue-br);
+    border-radius: 3px;
+    padding: 0.4rem;
+}
+.container_cards div:first-child {
+    width: 100%;
+}
+
+.presentatio {
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    width: 100%;
+    text-align: justify;
+    padding: 0 1.7rem;
+    font-weight: 600;
+}
+
+.container_footer {
+    background: var(--blue-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_footer div {
+    width: 100%;
+}
+.container_footer div:first-child {
+    display: none;
+    border-bottom: solid 1px var(--silver-bg);
+    padding-bottom: 0.7rem;
+}
+.container_footer div:first-child ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.4rem;
+}
+.container_footer div:last-child {
+    text-align: center;
+}
+.container_footer div ul li {
+    border-bottom: 3px solid var(--blue-br);
+    border-radius: 4px;
+    padding: 0.3rem 0.3rem 0.3rem;
+}
+.container_footer div ul a {
+    font-family: "Philosopher", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: var(--silver-bg);
+}
+.container_footer div:first-child ul li {
+    list-style: none;
+}
+.container_footer div:first-child ul li a {
+    text-decoration: none;
+}
+.container_footer div:last-child {
+    font-family: "Philosopher", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: var(--silver-bg);
+    padding: 0.4rem;
+}
+
+
+.container_card {
+    width: 500px;
+}
+
+
+.pending_css {
+    font-family: "Titillium Web", sans-serif;
+    font-style: italic;
+    color: var(--blue-br);
+    font-weight: 700;
+}

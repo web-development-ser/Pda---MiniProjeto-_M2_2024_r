@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Characters</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/codigo.png"/>
+
+    <link rel="stylesheet" href="./src/views/index.style.css">
+    <link rel="stylesheet" href="./src/views/main.javaScript.css">
+    <link rel="stylesheet" href="./src/views/media.query.css">
+</head>
+<body id="tema_css_js_body">
+    <header>
+        <div class="container_header">
+            <div>
+                <div class="box_logo box_one">
+                    (...) = { Development Ant Sérgio }
+                </div>
+                <div class="box_logo box_two"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/sergio-santos-1a7659222/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/web-development-ser" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/his.sergio.his/" target="_blank">Instagram</a></li>
+                    <li><a href="https://web-development-ser.github.io/repository-full-stack/" target="_blank">Bio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container_body">
+        <section>
+            <div class="container_form">
+                <form action="">
+                    <div id="ops_register" class="ops_register_css">
+                        <span id="ops_register_name">Anime</span>
+                    </div>
+                    <input type="text" id="name" placeholder="Name...">
+                    <input type="text" id="author" placeholder="Author...">
+                    <input type="url" id="link" placeholder="Link...">
+                    <input type="text" id="description" placeholder="Description...">
+                    <input type="text" id="date" placeholder="Date...">
+                    <input type="number" id="status" placeholder="Status...">
+                    <div id="close_novel" class="open_css">
+                        <input type="text" id="volume" placeholder="Volume...">
+                        <input type="text" id="typeNovel" placeholder="Type Novel...">
+                    </div>
+                    <div id="close_manga" class="open_css">
+                        <input type="text" id="chapter" placeholder="Chapter...">
+                        <input type="text" id="tag" placeholder="Tags...">
+                    </div>
+                    <span id="pending" class="pending_css"></span>
+                    <button type="button" id="register">Carregar / Upgrade...</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="container_cards">
+                <div id="remove_container" class="presentatio">
+                    <h3>Seja bem vindo(a)!</h3>
+                    <p>
+                        Essa aplicação web foi construída para cadastrar ou registrar os seguintes dados: <em>animes, novels e mangás.</em> <br>
+                        Os dados são organizados em class e temporariamente armazenados em variáveis, o que significa que após o navegador ser atualizado (recarregado) a página retornará do zero.
+                    </p>
+                    <p>
+                        Para que a aplicação funcione 100% leia abaixo: <br>
+                        Clicando sobre o Nome Novel você consegue mudar de tópico entre: <em>animes, novels e mangás.</em><br>
+                        <span>E lembrando que muda o tema da página utilizando alguns filtros, um implemento a mais.</span>
+                    </p>
+                    <h3>Existe dois cadastro, o básico e completo:</h3>
+                    <p>
+                        O básico necessita que você adicione: <br>
+                        <strong>Name:</strong> Pode ser nome de uma obra, ou personagem. <br>
+                        <strong>Author:</strong> Construtor da obra. <br>
+                        <strong>Link:</strong> Endereço de imagem (png, jpg, svg). <br>
+                        <span>(Se você estiver a fim, existe esse projeto de adquirir imagens e outras informações de <a href="https://web-development-ser.github.io/AnimeList/">animes</a>.)</span> <br>
+                        <strong><em>Sem preencher os demais dados…</em></strong>
+                    </p>
+                    <p>
+                        O avançado necessita que você preencha todos os campos sem faltar dados: <br>
+                        <strong>Description:</strong> Descrição do cadastro. <br>
+                        <strong>Date:</strong> Data da obra. <br>
+                        <strong>Status:</strong> Status em numeração. <br>
+                        <em>E demais campos se houver…</em> <br>
+                        <strong><em>Utilize essa ferramenta com responsabilidade.</em></strong>
+
+                    </p>
+                </div>
+                <div>
+                    <ul id="list_cards" class="list_cards_js">
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="container_footer">
+        <div>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sergio-santos-1a7659222/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/web-development-ser" target="_blank">GitHub</a></li>
+                <li><a href="https://www.instagram.com/his.sergio.his/" target="_blank">Instagram</a></li>
+                <li><a href="https://web-development-ser.github.io/repository-full-stack/" target="_blank">Bio</a></li>
+            </ul>
+        </div>
+
+        <div>
+            &copy; Todos os direitos reservados...
+        </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
